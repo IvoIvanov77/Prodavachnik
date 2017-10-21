@@ -1,6 +1,6 @@
 (function () {
     // Mock repository
-	    let adverts = [
+    let adverts = [
         {
             _id: 0,
             _acl: {
@@ -92,8 +92,8 @@
             };
         }
     });
-	
-	// Get user info
+
+    // Get user info
     $.mockjax(function (requestSettings) {
         if (requestSettings.url.match(/https:\/\/mock\.api\.com\/user\/kid_rk\/(.+)/)) {
             let userId = requestSettings.url.match(/https:\/\/mock\.api\.com\/user\/kid_rk\/(.+)/)[1];
@@ -111,9 +111,9 @@
         }
     });
 
-	// Loading of adverts
+    // Loading of adverts
     $.mockjax(function (requestSettings) {
-        if (requestSettings.url==="https://mock.api.com/appdata/kid_rk/adverts" &&
+        if (requestSettings.url === "https://mock.api.com/appdata/kid_rk/adverts" &&
             requestSettings.method === "GET") {
             return {
                 response: function (origSettings) {
@@ -127,8 +127,9 @@
             };
         }
     });
-	
-	// Create advert
+
+
+    // Create advert
     $.mockjax(function (requestSettings) {
         if (requestSettings.url === "https://mock.api.com/appdata/kid_rk/adverts" &&
             requestSettings.method === "POST") {
@@ -182,6 +183,7 @@
         }
     });
 
+
     // Edit advert
     $.mockjax(function (requestSettings) {
         if (requestSettings.url.match(/https:\/\/mock\.api\.com\/appdata\/kid_rk\/adverts\/(.+)/) &&
@@ -209,5 +211,4 @@
             };
         }
     });
-
 })();
