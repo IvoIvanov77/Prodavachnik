@@ -1,8 +1,11 @@
 # Prodavachnik
 
-### Source Control Systems 
+#### Simple Team Work project  
 
-#### Simple Team Work project, part of [Practical Teamwork course]( https://softuni.bg/trainings/1799/practical-teamwork-sept-2017) 
+This is the first assignment in the [Practical Teamwork course]( https://softuni.bg/trainings/1799/practical-teamwork-sept-2017)  @ SoftUni. 
+
+
+Topic: **Source Control Systems.**
  
   		  
  ### Contributors:	
